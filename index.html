@@ -9,33 +9,35 @@
 <body>
     <h1 id="titulo" class="titulo">Calculadora</h1>
     <div class="contenedor">
-        <label id="expresion" class="expresion">Expresion</label>
+        <label id="expresion" class="expresion" aria-placeholder="Ingrese una operacion"></label>
         <div class="fila">
-            <div class="boton">+</div>
-            <div class="boton">-</div>
-            <div class="boton">X</div>
-            <div class="boton">/</div>
+            <div class="boton fila1" onclick="suma()">+</div>
+            <div class="boton fila1" onclick="resta()">-</div>
+            <div class="boton fila1" onclick="multiplicacion()">X</div>
+            <div class="boton fila1" onclick="division()">/</div>
+            <div class="boton fila1" onclick="limpiar()">C</div>
         </div>
         <div class="fila">
-            <div class="boton">7</div>
-            <div class="boton">8</div>
-            <div class="boton">9</div>
+            <div class="boton" onclick="numero(7)">7</div>
+            <div class="boton" onclick="numero(8)">8</div>
+            <div class="boton" onclick="numero(9)">9</div>
         </div>
         <div class="fila">
-            <div class="boton">4</div>
-            <div class="boton">5</div>
-            <div class="boton">6</div>
+            <div class="boton" onclick="numero(4)">4</div>
+            <div class="boton" onclick="numero(5)">5</div>
+            <div class="boton" onclick="numero(6)">6</div>
         </div>
         <div class="fila">
-            <div class="boton">1</div>
-            <div class="boton">2</div>
-            <div class="boton">3</div>
+            <div class="boton" onclick="numero(1)">1</div>
+            <div class="boton" onclick="numero(2)">2</div>
+            <div class="boton" onclick="numero(3)">3</div>
         </div>
         <div class="fila">
-            <div class="boton">0</div>
-            <div class="boton">,</div>
-            <div class="boton">=</div>
+            <div class="boton" onclick="numero(0)">0</div>
+            <div class="boton" onclick="decimal()">.</div>
+            <div class="boton" onclick="resultado()">=</div>
         </div>    
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
