@@ -1,0 +1,44 @@
+:root{
+    --claro : #dad7cd;
+    --verde-suave : #a3b18a;
+    --verde-medio : #588157;
+    --verde : #3a5a40;
+    --verde-oscuro : #344e41;
+}
+html{
+    background-color: var(--claro);
+}
+.titulo {
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-shadow: var(--verde-medio) 2px 2px 2px;
+}
+.boton{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border: 2px solid var(--verde-medio);
+    border-radius: 10%;
+    background-color: var(--verde-medio);
+    font-family: 'Courier New', Courier, monospace;
+    width: 5%;
+    text-align: center;
+}
+.fila{
+    width: 100%;
+    padding: 10px 30px;
+}
+.contenedor{
+    border: 3px solid var(--verde-medio);
+    border-radius: 25px;
+    width: 400px;
+    margin: 0 auto;
+    height: 400px;
+}
+.expresion{
+    margin: 15px 35px;
+    border: 2px solid var(--verde-suave);
+    width: 100px;
+    display: block;
+}
